@@ -28,6 +28,9 @@ class Application
        resp.write "We don't have that item"
      end
 
+     if @@cart == []
+       resp.write "Your cart is empty"
+
     else
       resp.write "Path Not Found"
     end
