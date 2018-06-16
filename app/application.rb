@@ -28,7 +28,7 @@ class Application
        resp.write "We don't have that item"
      end
 
-     if !@@cart
+     if @@cart == []
        resp.write "Your cart is empty"
      end
     else
